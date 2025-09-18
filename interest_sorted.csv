@@ -1,0 +1,22 @@
+Interests_lst,Interest_ID,Interests_str
+['AI'],1,AI
+['Backend Dev'],2,Backend Dev
+['Cloud Computing'],3,Cloud Computing
+['Data Science'],4,Data Science
+['Frontend Dev'],5,Frontend Dev
+['Web Development'],6,Web Development
+"['AI', 'Backend Dev']",7,"AI, Backend Dev"
+"['AI', 'Cloud Computing']",8,"AI, Cloud Computing"
+"['AI', 'Data Science']",9,"AI, Data Science"
+"['AI', 'Frontend Dev']",10,"AI, Frontend Dev"
+"['AI', 'Web Development']",11,"AI, Web Development"
+"['Backend Dev', 'Cloud Computing']",12,"Backend Dev, Cloud Computing"
+"['Backend Dev', 'Data Science']",13,"Backend Dev, Data Science"
+"['Backend Dev', 'Frontend Dev']",14,"Backend Dev, Frontend Dev"
+"['Backend Dev', 'Web Development']",15,"Backend Dev, Web Development"
+"['Cloud Computing', 'Data Science']",16,"Cloud Computing, Data Science"
+"['Cloud Computing', 'Frontend Dev']",17,"Cloud Computing, Frontend Dev"
+"['Cloud Computing', 'Web Development']",18,"Cloud Computing, Web Development"
+"['Data Science', 'Frontend Dev']",19,"Data Science, Frontend Dev"
+"['Data Science', 'Web Development']",20,"Data Science, Web Development"
+"['Frontend Dev', 'Web Development']",21,"Frontend Dev, Web Development"
