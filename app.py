@@ -30,13 +30,13 @@ def submit_form():
         skills = request.form.getlist('skills')
         interests = request.form.getlist('interests')
         
-      
+        
         input_features = prepare_input_data(education, skills, interests)
         # for i in input_features:
         #     print("----------------")
         #     print(i)
         
-    
+        
         predicted_role_en = model.predict(input_features)[0]
         predicted_role = encoders_util.Internships_lb.inverse_transform([predicted_role_en])
         predicted_role = db_utils.skills_lts(predicted_role)
@@ -131,9 +131,11 @@ def prepare_input_data(education, skills, interests):
     
     # This is a simplified input - you need to match the exact features your model expects
     input_features = np.array([
-        edu_en, 
+         
         skills_encoded, 
-        interests_encoded
+        interests_encoded,
+        edu_en
+
     ]).reshape(1, -1)
     # print(f"INPUT_FEATURES : {input_features}")
     return input_features   
