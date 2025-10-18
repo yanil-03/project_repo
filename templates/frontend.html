@@ -595,7 +595,7 @@
     <!-- Navigation -->
     <nav>
         <div class="container nav-container">
-            <a href="#" class="logo" onclick="showPage('home')">PM Internship Recommender</a>
+            <a href="#" class="logo" onclick="showPage('home')">IT Internship Recommender</a>
             <ul class="nav-links">
                 <li><a href="#" onclick="showPage('home')">Home</a></li>
                 <li><a href="#" onclick="showPage('dashboard')">Dashboard</a></li>
@@ -1259,6 +1259,16 @@
                 nextButton.disabled = false;
             });
         }
+    </script>
+
+    <!-- chatbot -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
+        });
     </script>
 </body>
 </html>

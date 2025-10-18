@@ -19,7 +19,7 @@ df['SuggestedInternship'] = lb_internships.fit_transform(df['SuggestedInternship
 
 X = df.drop(columns = ['SuggestedInternship'])
 y = df['SuggestedInternship']
-print(X.head())
+# print(X.head())
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Best Parameters: {'n_estimators': 300, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_depth': 20, 'bootstrap': True}

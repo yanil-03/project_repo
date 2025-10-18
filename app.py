@@ -60,7 +60,7 @@ def submit_form():
             filtered_internships = internships_df[internships_df['InternshipRole'] == predicted_role]
         
         # Select top 4 internships
-        top_internships = filtered_internships.head(4).to_dict('records')
+        top_internships = filtered_internships.head(10).to_dict('records')
         
         # Create internship cards
         cards_html = create_internship_cards(top_internships)
